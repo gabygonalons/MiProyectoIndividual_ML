@@ -1,2 +1,2 @@
-# MiProyectoIndividual_ML
-Mi Proyecto Individual N°1 - Machine Learning Operations
+# Machine Learning Operations - Proyecto Individual
+Mi Proyecto Individual N°1 - Gabriela Beatriz Goñalons
