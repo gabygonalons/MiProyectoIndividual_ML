@@ -140,4 +140,24 @@ def get_actor(nombre_actor: str) -> dict:
     
     return resultados
 
-#API 6 - Éxito de Directores
+#Sistema de Recomendación
+@app.get('/get_pelicula/{nombre_pelicula}')
+def get_pelicula(titulo: str) -> dict:
+    indice_pelicula = movies[movies['title'] == titulo].index[0]
+    
+    fila_similitudes = cosine_sims[indice_pelicula]
+    
+    indices_ordenados = fila_similitudes.argsort()[::-1]
+    
+    indices_similares = indices_ordenados[1:6]
+    
+    titulos_similares = movies.loc[indices_similares, 'title'].values
+    generos_similares = movies.loc[indices_similares, 'genres'].values
+    
+    peliculas_similares = {
+        i: (titulo, genero)
+        for i, (titulo, genero) in enumerate(zip(titulos_similares, generos_similares), 1)
+    }
+    
+    return peliculas_similares
+
