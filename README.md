@@ -1,8 +1,8 @@
 # Machine Learning Operations - Proyecto Individual
-Mi Proyecto Individual N°1 - Gabriela Beatriz Goñalons
+## Mi Proyecto Individual N°1 - Gabriela Beatriz Goñalons
   <img src=https://fotografias.larazon.es/clipping/cmsimages01/2022/09/15/10F6EC7E-8DEE-449A-848E-3ED3AFD9DD85/98.jpg>
 
-## Proyecto:  _"Sistema de Recomendación de Películas"_
+# Proyecto:  _"Sistema de Recomendación de Películas"_
 
 # Tareas:
 1 -**ETL**: Dados dos archivos en formato .csv "Movies_DataSets" y "Credits" en los que se disponía de la información necesaria para alimentar a la API se inicia el proceso de ETL. El proceso de ETL incluyó desanidado de los campos belongs_to_collection, genres, production_companies y spoken_languages de la tabla de películas y los campos cast y crew de la tabla créditos. Además se debió realizar entre otras acciones: cambio de tipos de datos, eliminación de nulos, eliminación de columnas innecesarias y generación de nuevas columnas.
